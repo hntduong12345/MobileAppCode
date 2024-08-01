@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/buttonNotifacation"
+        android:layout_width="299dp"
+        android:layout_height="64dp"
+        android:layout_marginStart="56dp"
+        android:layout_marginTop="230dp"
+        android:layout_marginEnd="56dp"
+        android:text="Notifcation"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/buttonSqlite"
+        android:layout_width="299dp"
+        android:layout_height="65dp"
+        android:layout_marginStart="56dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="56dp"
+        android:text="Sqlite Database"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonNotifacation" />
+
+    <Button
+        android:id="@+id/buttonRoomDB"
+        android:layout_width="298dp"
+        android:layout_height="66dp"
+        android:layout_marginStart="56dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="57dp"
+        android:text="Room Database"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonSqlite" />
+
+    <Button
+        android:id="@+id/buttonApiCall"
+        android:layout_width="299dp"
+        android:layout_height="67dp"
+        android:layout_marginStart="56dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="56dp"
+        android:text="API Call"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonRoomDB" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="110dp"
+        android:layout_marginTop="120dp"
+        android:layout_marginEnd="110dp"
+        android:text="LAB APP"
+        android:textSize="48sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

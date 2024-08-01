@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="355dp"
+        android:layout_height="87dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="28dp"
+        android:text="Order Your Food And Drink"
+        android:textAlignment="center"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/buttonChooseFood"
+        android:layout_width="206dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="102dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginEnd="103dp"
+        android:text="Choose Your Food"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <Button
+        android:id="@+id/buttonQuit"
+        android:layout_width="116dp"
+        android:layout_height="56dp"
+        android:layout_marginStart="147dp"
+        android:layout_marginTop="48dp"
+        android:layout_marginEnd="148dp"
+        android:text="Quit"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonChooseDrink" />
+
+    <Button
+        android:id="@+id/buttonChooseDrink"
+        android:layout_width="207dp"
+        android:layout_height="61dp"
+        android:layout_marginStart="102dp"
+        android:layout_marginTop="48dp"
+        android:layout_marginEnd="102dp"
+        android:text="Choose Your Drink"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonChooseFood" />
+
+    <ListView
+        android:id="@+id/listViewOrders"
+        android:layout_width="409dp"
+        android:layout_height="211dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="71dp"
+        android:layout_marginEnd="1dp"
+        android:layout_marginBottom="1dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonQuit" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

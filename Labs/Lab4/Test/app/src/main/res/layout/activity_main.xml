@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/buttonNextPage"
+        android:layout_width="164dp"
+        android:layout_height="59dp"
+        android:layout_marginStart="123dp"
+        android:layout_marginTop="596dp"
+        android:layout_marginEnd="124dp"
+        android:layout_marginBottom="76dp"
+        android:text="Go to Next Page"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/editTextTextName"
+        android:layout_width="269dp"
+        android:layout_height="61dp"
+        android:layout_marginStart="71dp"
+        android:layout_marginTop="115dp"
+        android:layout_marginEnd="71dp"
+        android:ems="10"
+        android:hint="Insert Name"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/editTextNumberAge"
+        android:layout_width="270dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="71dp"
+        android:layout_marginTop="26dp"
+        android:layout_marginEnd="70dp"
+        android:ems="10"
+        android:hint="Age"
+        android:inputType="number"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextName" />
+
+    <CheckBox
+        android:id="@+id/checkBoxCSharp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="74dp"
+        android:layout_marginTop="46dp"
+        android:text="C#"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextNumberAge" />
+
+    <CheckBox
+        android:id="@+id/checkBoxReactJs"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="120dp"
+        android:layout_marginTop="44dp"
+        android:text="ReactJs"
+        app:layout_constraintStart_toEndOf="@+id/checkBoxCSharp"
+        app:layout_constraintTop_toBottomOf="@+id/editTextNumberAge" />
+
+    <CheckBox
+        android:id="@+id/checkBoxJava"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="76dp"
+        android:layout_marginTop="26dp"
+        android:layout_marginBottom="166dp"
+        android:text="Java"
+        app:layout_constraintBottom_toTopOf="@+id/buttonNextPage"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/checkBoxCSharp" />
+
+    <CheckBox
+        android:id="@+id/checkBox4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="106dp"
+        android:layout_marginTop="26dp"
+        android:layout_marginBottom="166dp"
+        android:text="NextJs"
+        app:layout_constraintBottom_toTopOf="@+id/buttonNextPage"
+        app:layout_constraintStart_toEndOf="@+id/checkBoxJava"
+        app:layout_constraintTop_toBottomOf="@+id/checkBoxReactJs" />
+</androidx.constraintlayout.widget.ConstraintLayout>

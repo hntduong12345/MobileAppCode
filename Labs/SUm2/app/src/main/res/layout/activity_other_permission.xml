@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <ImageView
+        android:id="@+id/imageViewChrome"
+        android:layout_width="125dp"
+        android:layout_height="125dp"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="140dp"
+        android:layout_marginEnd="242dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/chrome" />
+
+    <ImageView
+        android:id="@+id/imageViewMessage"
+        android:layout_width="125dp"
+        android:layout_height="125dp"
+        android:layout_marginStart="47dp"
+        android:layout_marginTop="80dp"
+        android:layout_marginEnd="239dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageViewChrome"
+        app:srcCompat="@drawable/message" />
+
+    <ImageView
+        android:id="@+id/imageViewPhoneCall"
+        android:layout_width="125dp"
+        android:layout_height="125dp"
+        android:layout_marginStart="47dp"
+        android:layout_marginTop="80dp"
+        android:layout_marginEnd="239dp"
+        android:layout_marginBottom="124dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageViewMessage"
+        app:srcCompat="@drawable/phone_call" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

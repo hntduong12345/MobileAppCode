@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Map_Lab</string>
+
+    <string name="map_api_key">AIzaSyD3OsS2-K22LkNuuPH3yZw7jnahg3msJZA</string>
+</resources>
